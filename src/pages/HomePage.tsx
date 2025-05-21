@@ -7,33 +7,7 @@ const HomePage: React.FC = () => {
   const [mode, setMode] = useState<ExplorationMode>('place');
 
   return (
-    <div className="flex flex-col">
-      {/* Mode Selection */}
-      <div className="container mx-auto px-4 py-6 flex justify-center space-x-4">
-        <button 
-          className={`flex items-center px-6 py-3 rounded-md transition-colors ${
-            mode === 'place' 
-              ? 'bg-blue-600 text-white' 
-              : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-          }`}
-          onClick={() => setMode('place')}
-        >
-          <MapPin size={20} className="mr-2" />
-          <span>Explore Places</span>
-        </button>
-        <button 
-          className={`flex items-center px-6 py-3 rounded-md transition-colors ${
-            mode === 'activity' 
-              ? 'bg-blue-600 text-white' 
-              : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-          }`}
-          onClick={() => setMode('activity')}
-        >
-          <Activity size={20} className="mr-2" />
-          <span>Find Activities</span>
-        </button>
-      </div>
-
+    <div className="flex flex-col min-h-screen pb-20">
       {/* Content */}
       <div className="container mx-auto px-4 py-8">
         <h2 className="text-2xl font-bold text-slate-800 mb-6">
@@ -114,6 +88,34 @@ const HomePage: React.FC = () => {
               </div>
             ))
           )}
+        </div>
+      </div>
+
+      {/* Fixed Bottom Mode Selection */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg">
+        <div className="container mx-auto px-4 py-4 flex justify-center space-x-4">
+          <button 
+            className={`flex items-center px-6 py-3 rounded-md transition-colors ${
+              mode === 'place' 
+                ? 'bg-blue-600 text-white' 
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+            }`}
+            onClick={() => setMode('place')}
+          >
+            <MapPin size={20} className="mr-2" />
+            <span>Explore Places</span>
+          </button>
+          <button 
+            className={`flex items-center px-6 py-3 rounded-md transition-colors ${
+              mode === 'activity' 
+                ? 'bg-blue-600 text-white' 
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+            }`}
+            onClick={() => setMode('activity')}
+          >
+            <Activity size={20} className="mr-2" />
+            <span>Find Activities</span>
+          </button>
         </div>
       </div>
     </div>
