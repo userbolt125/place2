@@ -67,6 +67,69 @@ export const samplePlaces: Place[] = [
     media: {
       images: ['https://images.pexels.com/photos/76969/central-park-new-york-panorama-76969.jpeg']
     }
+  },
+  {
+    id: 'p4',
+    name: 'Santorini',
+    description: 'A stunning Greek island known for its white-washed buildings, blue-domed churches, and spectacular sunsets over the Aegean Sea.',
+    location: {
+      continent: 'Europe',
+      country: 'Greece',
+      city: 'Santorini',
+      coordinates: {
+        lat: 36.3932,
+        lng: 25.4615
+      }
+    },
+    categories: ['Island', 'Cultural', 'Romantic'],
+    domains: ['Tourism', 'Entertainment'],
+    accessibility: ['Paid', 'Limited Accessibility'],
+    activities: ['Sightseeing', 'Photography', 'Wine Tasting', 'Swimming'],
+    media: {
+      images: ['https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg']
+    }
+  },
+  {
+    id: 'p5',
+    name: 'Machu Picchu',
+    description: 'An ancient Incan city set high in the Andes Mountains, featuring spectacular stone architecture and panoramic views.',
+    location: {
+      continent: 'South America',
+      country: 'Peru',
+      city: 'Cusco',
+      coordinates: {
+        lat: -13.1631,
+        lng: -72.5450
+      }
+    },
+    categories: ['Historical', 'Cultural', 'Natural'],
+    domains: ['Tourism', 'Education'],
+    accessibility: ['Paid', 'Guided Tours'],
+    activities: ['Hiking', 'Photography', 'Archaeological Tours'],
+    media: {
+      images: ['https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg']
+    }
+  },
+  {
+    id: 'p6',
+    name: 'Great Barrier Reef',
+    description: 'The world\'s largest coral reef system, home to diverse marine life and offering incredible diving and snorkeling experiences.',
+    location: {
+      continent: 'Oceania',
+      country: 'Australia',
+      city: 'Cairns',
+      coordinates: {
+        lat: -18.2871,
+        lng: 147.6992
+      }
+    },
+    categories: ['Natural', 'Marine', 'Adventure'],
+    domains: ['Tourism', 'Environment'],
+    accessibility: ['Paid', 'Tour Required'],
+    activities: ['Diving', 'Snorkeling', 'Boat Tours', 'Marine Life Watching'],
+    media: {
+      images: ['https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg']
+    }
   }
 ];
 
@@ -147,6 +210,84 @@ export const sampleActivities: Activity[] = [
     frequency: 'Monthly',
     media: {
       images: ['https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg']
+    }
+  },
+  {
+    id: 'a4',
+    name: 'Cooking Class',
+    description: 'Learn new culinary skills and recipes from professional chefs in an interactive setting.',
+    context: ['Indoor', 'Educational', 'Social'],
+    classification: {
+      level1: 'Culinary',
+      level2: 'Education',
+      level3: 'Cooking'
+    },
+    compatiblePlaces: ['Cooking School', 'Restaurant', 'Community Center'],
+    bestTimes: {
+      timeOfDay: ['Evening'],
+      dayOfWeek: ['Weekend'],
+      season: ['All Year']
+    },
+    duration: {
+      min: 2,
+      max: 3,
+      unit: 'hours'
+    },
+    frequency: 'Monthly',
+    media: {
+      images: ['https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg']
+    }
+  },
+  {
+    id: 'a5',
+    name: 'Rock Climbing',
+    description: 'Challenge yourself with indoor or outdoor rock climbing, suitable for all skill levels.',
+    context: ['Indoor', 'Outdoor', 'Adventure'],
+    classification: {
+      level1: 'Sport',
+      level2: 'Climbing',
+      level3: 'Rock Climbing'
+    },
+    compatiblePlaces: ['Climbing Gym', 'Natural Cliffs', 'Indoor Wall'],
+    bestTimes: {
+      timeOfDay: ['Any'],
+      dayOfWeek: ['Any'],
+      season: ['All Year']
+    },
+    duration: {
+      min: 1,
+      max: 3,
+      unit: 'hours'
+    },
+    frequency: 'Weekly',
+    media: {
+      images: ['https://images.pexels.com/photos/1822458/pexels-photo-1822458.jpeg']
+    }
+  },
+  {
+    id: 'a6',
+    name: 'Photography Workshop',
+    description: 'Learn photography techniques and improve your skills with hands-on instruction.',
+    context: ['Indoor', 'Outdoor', 'Educational'],
+    classification: {
+      level1: 'Art',
+      level2: 'Photography',
+      level3: 'Workshop'
+    },
+    compatiblePlaces: ['Studio', 'Urban Areas', 'Nature'],
+    bestTimes: {
+      timeOfDay: ['Morning', 'Evening'],
+      dayOfWeek: ['Weekend'],
+      season: ['All Year']
+    },
+    duration: {
+      min: 3,
+      max: 6,
+      unit: 'hours'
+    },
+    frequency: 'Monthly',
+    media: {
+      images: ['https://images.pexels.com/photos/1793525/pexels-photo-1793525.jpeg']
     }
   }
 ];
