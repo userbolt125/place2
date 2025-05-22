@@ -1,4 +1,4 @@
-import { Place, Activity } from '../types';
+import { Place, Activity, Event } from '../types';
 
 // Sample Places data
 export const samplePlaces: Place[] = [
@@ -288,6 +288,160 @@ export const sampleActivities: Activity[] = [
     frequency: 'Monthly',
     media: {
       images: ['https://images.pexels.com/photos/1793525/pexels-photo-1793525.jpeg']
+    }
+  }
+];
+
+// Sample Events data
+export const sampleEvents: Event[] = [
+  {
+    id: 'e1',
+    name: 'Summer Music Festival',
+    description: 'A three-day music festival featuring top artists from around the world.',
+    date: '2025-07-15',
+    time: '14:00',
+    location: {
+      venue: 'Central Park',
+      city: 'New York',
+      country: 'USA'
+    },
+    category: ['Music', 'Festival', 'Entertainment'],
+    status: 'upcoming',
+    price: {
+      amount: 299,
+      currency: 'USD'
+    },
+    capacity: {
+      total: 50000,
+      available: 15000
+    },
+    media: {
+      images: ['https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg']
+    }
+  },
+  {
+    id: 'e2',
+    name: 'Tech Innovation Summit',
+    description: 'Annual conference bringing together tech leaders and innovators.',
+    date: '2025-06-01',
+    time: '09:00',
+    location: {
+      venue: 'Convention Center',
+      city: 'San Francisco',
+      country: 'USA'
+    },
+    category: ['Technology', 'Business', 'Conference'],
+    status: 'available',
+    price: {
+      amount: 599,
+      currency: 'USD'
+    },
+    capacity: {
+      total: 5000,
+      available: 2000
+    },
+    media: {
+      images: ['https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg']
+    }
+  },
+  {
+    id: 'e3',
+    name: 'Food & Wine Festival',
+    description: 'Celebrate culinary excellence with top chefs and wine experts.',
+    date: '2025-08-20',
+    time: '11:00',
+    location: {
+      venue: 'Waterfront Park',
+      city: 'Miami',
+      country: 'USA'
+    },
+    category: ['Food', 'Wine', 'Festival'],
+    status: 'upcoming',
+    price: {
+      amount: 150,
+      currency: 'USD'
+    },
+    capacity: {
+      total: 10000,
+      available: 5000
+    },
+    media: {
+      images: ['https://images.pexels.com/photos/541216/pexels-photo-541216.jpeg']
+    }
+  },
+  {
+    id: 'e4',
+    name: 'Art Exhibition Opening',
+    description: 'Opening night of contemporary art exhibition featuring international artists.',
+    date: '2025-05-10',
+    time: '18:00',
+    location: {
+      venue: 'Modern Art Museum',
+      city: 'London',
+      country: 'UK'
+    },
+    category: ['Art', 'Culture', 'Exhibition'],
+    status: 'available',
+    price: {
+      amount: 25,
+      currency: 'GBP'
+    },
+    capacity: {
+      total: 1000,
+      available: 400
+    },
+    media: {
+      images: ['https://images.pexels.com/photos/1647121/pexels-photo-1647121.jpeg']
+    }
+  },
+  {
+    id: 'e5',
+    name: 'Marathon City Run',
+    description: 'Annual city marathon through scenic urban landscapes.',
+    date: '2025-09-05',
+    time: '07:00',
+    location: {
+      venue: 'City Center',
+      city: 'Berlin',
+      country: 'Germany'
+    },
+    category: ['Sports', 'Running', 'Competition'],
+    status: 'upcoming',
+    price: {
+      amount: 80,
+      currency: 'EUR'
+    },
+    capacity: {
+      total: 20000,
+      available: 8000
+    },
+    media: {
+      images: ['https://images.pexels.com/photos/2774588/pexels-photo-2774588.jpeg']
+    }
+  },
+  {
+    id: 'e6',
+    name: 'Comedy Night Special',
+    description: 'Evening of stand-up comedy featuring top international comedians.',
+    date: '2025-06-15',
+    time: '20:00',
+    location: {
+      venue: 'Comedy Club',
+      city: 'Melbourne',
+      country: 'Australia'
+    },
+    category: ['Comedy', 'Entertainment', 'Nightlife'],
+    status: 'available',
+    price: {
+      amount: 45,
+      currency: 'AUD'
+    },
+    capacity: {
+      total: 500,
+      available: 100
+    },
+    media: {
+      images: ['https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg']
     }
   }
 ];
