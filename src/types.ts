@@ -1,4 +1,4 @@
-export type ExplorationMode = 'place' | 'activity';
+export type ExplorationMode = 'place' | 'activity' | 'event';
 
 export interface TaxonomyItem {
   id: string;
@@ -58,6 +58,33 @@ export interface Activity {
     unit: string;
   };
   frequency?: string;
+  media?: {
+    images: string[];
+    videos?: string[];
+  };
+}
+
+export interface Event {
+  id: string;
+  name: string;
+  description: string;
+  date: string;
+  time: string;
+  location: {
+    venue: string;
+    city: string;
+    country: string;
+  };
+  category: string[];
+  status: 'upcoming' | 'available';
+  price?: {
+    amount: number;
+    currency: string;
+  };
+  capacity?: {
+    total: number;
+    available: number;
+  };
   media?: {
     images: string[];
     videos?: string[];
